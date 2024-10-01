@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metros para Centímetros</title>
+    <style>
+        body {
+            background-color: #fcfde4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .quadrado {
+            background-color: #faf79f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #635304;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #b7b2b2;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #c4be12;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 90%;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 80px; 
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1719/1719721.png">
+
+<body>
+    <div class="quadrado">
+        <h1>Conversor de Metros para Centímetros</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/1719/1719721.png" alt="Conversor de Metros">
+       
+        <form action="metros_cm.php" method="POST">
+            <input type="number" name="metros" placeholder="Metros" step="0.1" min="0" max="10000000"required><br>
+            <input type="submit" value="Converter"><br><br>
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+</html>
